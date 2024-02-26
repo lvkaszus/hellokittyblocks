@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html class="">
+<html lang="pl">
     <head>
         <meta charset="utf-8">
 
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>ten by ten! - w/ server-side validation</title>
+        <title>Hello Kitty Blocks - lvkaszus</title>
 
+        <meta name="description" content="Hello Kitty Blocks - prosta układanka w stylu 1010 z motywem Hello Kitty&reg;!" />
+        
+        <meta name="robots" content="noindex, nofollow" />
+
+        <link href="loader.css" rel="stylesheet" type="text/css">
         <link href="game.css" rel="stylesheet" type="text/css">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6cf3">
+        <meta name="msapplication-TileColor" content="#ff6cf3">
+        <meta name="theme-color" content="#ff6cf3">
     </head>
 
     <body>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 110 140"></svg>
+        <div id="container">
+            <div id="loader-main">
+                <div id="loader-container">
+                    <div id="loader-heading" class="loader-fade-in">
+                        <img id="loader-image" src="vendor/hellokitty_logo.webp" width="40px" height="50px" alt="Hello Kitty Logo" />
+                        <h1 id="loader-title">Hello Kitty<span id="loader-regtrademark">&reg;</span></h1>
+                    </div>
 
-        <script src="vendor/fullscreen-api-polyfill.js"></script>
-        <script src="vendor/snap.svg-min.js"></script>
-        <script src="vendor/jsfx.js"></script>
-        <script src="gravatar.js"></script>
-        <script src="sfx.js"></script>
-        <script src="common.js"></script>
-        <script src="client-using-server.js"></script>
+                    <p id="loader-description" class="loader-fade-in">Blocks</p>
+
+                    <p id="loader-credits" class="loader-fade-in">Gra stworzona przez <a href="https://github.com/JosePedroDias" target="_blank" rel="noreferrer noopener">@JosePedroDias</a> i <a href="https://lvkasz.us" target="_blank" rel="noreferrer noopener">@lvkaszus</a></p>
+
+                    <p id="loader-dedication" class="loader-fade-in">Z dedykacją dla mojej dziewczyny, W. Różańskiej ❤️</p>
+          
+                    <noscript>
+                        <h1 id="loader-noscript">Błąd!</h1>
+                        <p id="loader-noscript">Musisz włączyć obsługę JavaScript w swojej przeglądarce, aby gra zaczęła działać poprawnie.</p>
+                    </noscript>
+          
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <script src="vendor/snap.svg-min.js"></script>
+            <script src="common.js"></script>
+            <script src="core.js"></script>
+        </div>
     </body>
 </html>
