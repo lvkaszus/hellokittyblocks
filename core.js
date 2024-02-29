@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     
-        var hasTouch = function() { // from modernizr
-            return (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
+        var hasTouch = function() {
+            return 'ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch) || 'ontouchstart' in document.documentElement;
         };
     
     
